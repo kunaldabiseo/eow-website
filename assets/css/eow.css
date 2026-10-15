@@ -3182,3 +3182,12 @@ html,body{scroll-behavior:auto!important}
   .faq-viewall[hidden]{display:none}
 }
 @media (max-width:720px){.final .mini-chips,.final .contact-line,.final .fc-side{display:none!important}}
+
+/* header: live-site page links */
+.nav-links>li.nav-split{display:flex;align-items:center}
+.nav-links>li.nav-split>button.nav-chev{padding:9px 12px 9px 2px!important;margin-left:-10px}
+.nav-links>li.nav-split>button.nav-chev::after{display:none!important}
+.nav-links a,.nav-links>li>button{white-space:nowrap}
+.nav-links>li>a.active:not(.is-lit){color:#EEEEEE!important}
+@media (min-width:1081px) and (max-width:1180px){.nav-links a,.nav-links>li>button{padding-inline:8px!important;font-size:13px!important}.nav-links>li.nav-split>button.nav-chev{padding-inline:0 7px!important;margin-left:-8px}.brand-txt small{display:none}}
+@media (min-width:1181px) and (max-width:1320px){.nav-links a,.nav-links>li>button{padding-inline:11px!important;font-size:13.5px!important}.nav-links>li.nav-split>button.nav-chev{padding-inline:2px 9px!important}}
