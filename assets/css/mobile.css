@@ -33,6 +33,7 @@
   #services .svc-track .card{width:auto!important;min-width:0!important;max-width:none!important;flex:none!important;height:auto!important;min-height:0!important;
     margin:0!important;padding:0!important;border-radius:18px!important;overflow:hidden;transform:none!important;opacity:1!important;scroll-snap-align:none!important}
   #services .card .num,#services .card .card-img,#services .card .doc-stack,#services .card .wave,#services .card .ico,#services .card .svc-go{display:none!important}
+  #services .card a.svc-link{display:grid!important;transform:none}
   #services .card.feature.photo{background:#302C2C!important;color:#fff}
   #services .card.feature.photo::before,#services .card.feature.photo::after{display:none!important}
   #services .m-svc-head{display:flex;align-items:center;gap:12px;width:100%;padding:16px 16px;background:transparent;border:0;font:inherit;color:inherit;text-align:left;cursor:pointer}
