@@ -203,3 +203,20 @@ h2.ip-kicker{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:
 .ip-form2{grid-template-columns:1fr 1fr}
 .ip-form2 .if-group,.ip-form2 .if-foot,.ip-form2 .if-ok,.ip-form2 label:has(textarea){grid-column:1/-1}
 @media (max-width:720px){.ip-form2{grid-template-columns:1fr}}
+
+/* location pages: extra local content */
+.prose .loc-extra{display:grid;gap:18px;margin-top:8px}
+.prose .loc-extra>*{margin:0}
+.prose .loc-extra>h2{margin-top:26px}
+.prose .loc-rules{border:1px solid #EEEEEE;border-radius:18px;padding:6px 22px;background:#FFFDF2}
+.prose .loc-rules dl{margin:0;display:grid}
+.prose .loc-rules dl>div{display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr);gap:4px 18px;padding:14px 0;border-top:1px solid #F0EDE0}
+.prose .loc-rules dl>div:first-child{border-top:0}
+.prose .loc-rules dt{font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#302C2C;padding-top:3px}
+.prose .loc-rules dd{margin:0;font-size:15.5px;line-height:1.65}
+.prose .loc-cite{color:#77746A;font-size:13.5px;white-space:normal}
+.prose .loc-note{font-size:13.5px;line-height:1.6;color:#77746A}
+.prose .loc-faq{display:grid;gap:6px}
+.prose .loc-faq h3{margin-top:14px;font-size:1.08rem}
+.prose .loc-faq p{margin:0}
+@media (max-width:640px){.prose .loc-rules{padding:4px 16px}.prose .loc-rules dl>div{grid-template-columns:1fr}}
