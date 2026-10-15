@@ -2564,6 +2564,23 @@ $$(".display, .final h2").forEach(h => hio.observe(h));
   mq.addEventListener ? mq.addEventListener("change", apply) : mq.addListener(apply); apply();
 })();
 
+// FAQ on mobile: show the first 5 questions, then "View all"
+(function(){ const list = document.getElementById("faqList"); if (!list) return;
+  const mq = matchMedia("(max-width:720px)"), LIMIT = 5, search = document.getElementById("faqSearch");
+  const btn = document.createElement("button"); btn.type = "button"; btn.className = "faq-more"; list.after(btn);
+  let open = false;
+  const apply = () => { const items = [...list.querySelectorAll(".qa")]; const shown = items.filter(d => !d.hidden);
+    const q = search && search.value.trim(); const collapse = mq.matches && !open && !q && shown.length > LIMIT;
+    items.forEach(d => d.classList.remove("fq-x")); if (collapse) shown.slice(LIMIT).forEach(d => d.classList.add("fq-x"));
+    btn.hidden = !mq.matches || q || shown.length <= LIMIT;
+    btn.innerHTML = `<span>${open ? "Show fewer questions" : `View all <b>${shown.length}</b> questions`}</span><i aria-hidden="true">${open ? "↑" : "↓"}</i>`; };
+  btn.addEventListener("click", () => { const wasOpen = open; open = !open; apply();
+    if (wasOpen) list.scrollIntoView({behavior: "smooth", block: "start"}); });
+  new MutationObserver(apply).observe(list, {subtree: true, attributes: true, attributeFilter: ["hidden"]});
+  if (search) search.addEventListener("input", apply);
+  mq.addEventListener ? mq.addEventListener("change", apply) : mq.addListener(apply); apply();
+})();
+
 })();
 </script>
 </body>
