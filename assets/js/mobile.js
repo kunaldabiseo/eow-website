@@ -146,8 +146,8 @@ parts.push((() => {
   };
 })());
 
-/* ---------- 7. inner pages: "On this page" jump list for long articles ---------- */
-parts.push((() => {
+/* ---------- 7. (removed: no on-page hash links) ---------- */
+false && parts.push((() => {
   let nav;
   return {
     on(){ const prose = $(".ip-body .prose"); if (!prose) return;
