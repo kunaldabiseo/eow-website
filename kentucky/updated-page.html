@@ -228,22 +228,26 @@ a {
 .eow-ky li{margin:0 0 6px}
 .eow-ky a{text-decoration:underline}
 /* FAQ accordion (this page only) */
-.eow-ky-acc{border-top:1px solid #e2e2e2;margin:0 0 20px}
-.eow-ky-acc details{border-bottom:1px solid #e2e2e2}
-.eow-ky-acc summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 4px;cursor:pointer}
+.eow-ky-acc{display:grid;gap:12px;margin:4px 0 24px}
+.eow-ky-acc details{background:#fff;border:1px solid #e4e4e4;border-radius:10px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.04);transition:box-shadow .25s,border-color .25s,transform .25s}
+.eow-ky-acc details:hover{border-color:#cfcfcf;box-shadow:0 8px 22px rgba(0,0,0,.08);transform:translateY(-1px)}
+.eow-ky-acc details[open]:not(.closing){border-color:#3a3a3a;box-shadow:0 12px 28px rgba(0,0,0,.14);transform:none}
+.eow-ky-acc summary{list-style:none;display:flex;align-items:center;gap:14px;padding:16px 18px;cursor:pointer;transition:background .25s}
 .eow-ky-acc summary::-webkit-details-marker{display:none}
-.eow-ky-acc summary h3{margin:0;font-size:16px;line-height:24px;font-weight:600;color:#333}
-.eow-ky-acc summary:hover h3{color:#000}
-.eow-ky-acc summary:focus-visible{outline:2px solid #333;outline-offset:2px}
-.eow-ky-ic{flex:0 0 26px;height:26px;border:1px solid #cfcfcf;border-radius:50%;position:relative}
-.eow-ky-ic::before,.eow-ky-ic::after{content:"";position:absolute;left:50%;top:50%;width:10px;height:2px;background:#333;transform:translate(-50%,-50%);transition:transform .2s}
+.eow-ky-acc details[open]:not(.closing) summary{background:#3a3a3a}
+.eow-ky-q{flex:0 0 30px;height:30px;border-radius:8px;background:#ffea00;color:#333;font-weight:700;font-size:14px;line-height:30px;text-align:center}
+.eow-ky-acc summary h3{flex:1;margin:0;font-size:16px;line-height:24px;font-weight:600;color:#333;transition:color .25s}
+.eow-ky-acc details[open]:not(.closing) summary h3{color:#fff}
+.eow-ky-acc summary:focus-visible{outline:2px solid #ffea00;outline-offset:-2px}
+.eow-ky-ic{flex:0 0 30px;height:30px;border-radius:50%;background:#f1f1f1;position:relative;transition:background .25s,transform .3s}
+.eow-ky-ic::before,.eow-ky-ic::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;border-radius:2px;background:#333;transform:translate(-50%,-50%)}
 .eow-ky-ic::after{transform:translate(-50%,-50%) rotate(90deg)}
-.eow-ky-acc details[open] .eow-ky-ic{background:#333;border-color:#333}
-.eow-ky-acc details[open] .eow-ky-ic::before{background:#fff}
-.eow-ky-acc details[open] .eow-ky-ic::after{transform:translate(-50%,-50%) rotate(0);background:#fff}
-.eow-ky-ans{padding:0 4px 16px}
-.eow-ky-ans p{margin:0}
-@media (prefers-reduced-motion:reduce){.eow-ky-ic::before,.eow-ky-ic::after{transition:none}}
+.eow-ky-acc details[open]:not(.closing) .eow-ky-ic{background:#ffea00;transform:rotate(45deg)}
+.eow-ky-ans{overflow:hidden;transition:height .32s ease}
+.eow-ky-ans-in{padding:16px 18px 18px 62px;border-left:4px solid #ffea00;margin-left:0}
+.eow-ky-ans-in p{margin:0}
+@media (max-width:767px){.eow-ky-ans-in{padding-left:18px}.eow-ky-acc summary{padding:14px}}
+@media (prefers-reduced-motion:reduce){.eow-ky-acc details,.eow-ky-acc summary,.eow-ky-ic,.eow-ky-ans{transition:none}}
 /* Desktop only: right sidebar stays in view while the left content scrolls (this page only) */
 @media (min-width:1025px){
  body.elementor-page-1986 .opal-wrapper,
@@ -1355,7 +1359,28 @@ a {
 <div class="elementor-element elementor-widget elementor-widget-text-editor eow-ky eow-chg" data-chg="4" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><h2>Eye Cases Dr. Lefkowitz Reviews</h2><ul><li><a href="/ophthalmologist-expert-witness/cataract-expert-witness/">Cataract surgery</a> complications, including lens and wound problems</li><li><a href="/ophthalmologist-expert-witness/oculoplastic-expert-witness/">Eyelid and oculoplastic surgery</a></li><li><a href="/surgery-expert-witness/">LASIK and refractive surgery</a></li><li><a href="/ophthalmologist-expert-witness/glaucoma-expert/">Glaucoma</a> diagnosis and management</li><li><a href="/retinal-detachment-expert-witness/">Retinal detachment</a> and delayed diagnosis</li><li>Strabismus surgery, pterygium surgery and emergency eye care</li></ul></div></div>
 <div class="elementor-element elementor-widget elementor-widget-text-editor eow-ky eow-chg" data-chg="5" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><h2>Why Kentucky Attorneys Choose Dr. Lefkowitz</h2><ul><li>Board-certified ophthalmologist, Diplomate of the American Board of Ophthalmology since 1982, with over 40 years of practice as a surgeon and clinician</li><li>Expert reviewer for the Arizona Medical Board from 2000 to 2007, then a Physician Member of that board from 2007 to 2010</li><li>Ophthalmology case reviewer for MAXIMUS from 2010 to 2015</li><li>Clinical Assistant Professor at the University of Arizona College of Medicine Phoenix</li><li>Former Chief of Ophthalmology at Luke AFB and Scott AFB in the US Air Force Medical Corps</li><li>No history of malpractice settlements or verdicts, and no medical board actions</li><li>400+ cases completed on a contract or retainer basis</li></ul><p>Dr. Lefkowitz is an independent and ethical expert. You can see every state where he has reviewed cases on his <a href="/ophthalmologist-expert-witness/">expert ophthalmologist witness services</a> page.</p></div></div>
 <div class="elementor-element elementor-widget elementor-widget-text-editor eow-ky eow-chg" data-chg="6" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><h2>How to Start Your Kentucky Case</h2><ol><li id="step-1">Email <a href="mailto:talefkowitzmd@gmail.com">talefkowitzmd@gmail.com</a> or fill in the form on the <a href="/contact/">Contact Me</a> page. Add a short summary of the case, the court and any deadline.</li><li id="step-2">Dr. Lefkowitz replies to talk through the case and confirm it fits his expertise.</li><li id="step-3">Send the medical records. He reviews them and gives you his opinion.</li></ol><p>Please contact Dr. Lefkowitz only if you are an attorney or are working with legal representation.</p></div></div>
-<div class="elementor-element elementor-widget elementor-widget-text-editor eow-ky eow-ky-faq eow-chg" data-chg="7" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><h2>Kentucky Expert Ophthalmology Witness FAQs</h2><div class="eow-ky-acc"><details open><summary><h3>Does Dr. Lefkowitz work for both plaintiff and defense in Kentucky?</h3><span class="eow-ky-ic" aria-hidden="true"></span></summary><div class="eow-ky-ans"><p>Yes. He reviews Kentucky eye cases for plaintiff and defense counsel, and gives the same independent opinion either way.</p></div></details><details><summary><h3>Can he be the consulting expert for a Kentucky certificate of merit?</h3><span class="eow-ky-ic" aria-hidden="true"></span></summary><div class="eow-ky-ans"><p>Yes. Under KRS 411.167 the attorney files the certificate of merit with the complaint, stating that a qualified expert was consulted and found a reasonable basis for the claim. Dr. Lefkowitz can review the records and serve as that consulting expert, and he can also provide affidavits.</p></div></details><details><summary><h3>Does he need to travel to Kentucky?</h3><span class="eow-ky-ic" aria-hidden="true"></span></summary><div class="eow-ky-ans"><p>Not for most of the work. Case review and depositions can be done by phone or video conference. He will travel to Kentucky for trial testimony.</p></div></details><details><summary><h3>How soon should a Kentucky case be sent for review?</h3><span class="eow-ky-ic" aria-hidden="true"></span></summary><div class="eow-ky-ans"><p>As early as possible. Kentucky generally gives one year from when the injury was discovered, or should have been discovered, to file a medical negligence claim (KRS 413.140). Your counsel should confirm the deadline for your case.</p></div></details></div></div></div>
+<div class="elementor-element elementor-widget elementor-widget-text-editor eow-ky eow-ky-faq eow-chg" data-chg="7" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><h2>Kentucky Expert Ophthalmology Witness FAQs</h2><div class="eow-ky-acc"><details name="eow-ky-faq" open><summary><span class="eow-ky-q">Q</span><h3>Does Dr. Lefkowitz work for both plaintiff and defense in Kentucky?</h3><span class="eow-ky-ic" aria-hidden="true"></span></summary><div class="eow-ky-ans"><div class="eow-ky-ans-in"><p>Yes. He reviews Kentucky eye cases for plaintiff and defense counsel, and gives the same independent opinion either way.</p></div></div></details><details name="eow-ky-faq"><summary><span class="eow-ky-q">Q</span><h3>Can he be the consulting expert for a Kentucky certificate of merit?</h3><span class="eow-ky-ic" aria-hidden="true"></span></summary><div class="eow-ky-ans"><div class="eow-ky-ans-in"><p>Yes. Under KRS 411.167 the attorney files the certificate of merit with the complaint, stating that a qualified expert was consulted and found a reasonable basis for the claim. Dr. Lefkowitz can review the records and serve as that consulting expert, and he can also provide affidavits.</p></div></div></details><details name="eow-ky-faq"><summary><span class="eow-ky-q">Q</span><h3>Does he need to travel to Kentucky?</h3><span class="eow-ky-ic" aria-hidden="true"></span></summary><div class="eow-ky-ans"><div class="eow-ky-ans-in"><p>Not for most of the work. Case review and depositions can be done by phone or video conference. He will travel to Kentucky for trial testimony.</p></div></div></details><details name="eow-ky-faq"><summary><span class="eow-ky-q">Q</span><h3>How soon should a Kentucky case be sent for review?</h3><span class="eow-ky-ic" aria-hidden="true"></span></summary><div class="eow-ky-ans"><div class="eow-ky-ans-in"><p>As early as possible. Kentucky generally gives one year from when the injury was discovered, or should have been discovered, to file a medical negligence claim (KRS 413.140). Your counsel should confirm the deadline for your case.</p></div></div></details></div><script>
+(function(){
+ var acc=document.querySelector('.eow-ky-acc'); if(!acc) return;
+ var items=[].slice.call(acc.querySelectorAll('details'));
+ var still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function animate(d,open){
+  var body=d.querySelector('.eow-ky-ans');
+  if(still){ d.open=open; return; }
+  if(open){ d.open=true; var h=body.scrollHeight; body.style.height='0px'; body.offsetHeight; body.style.height=h+'px'; }
+  else { body.style.height=body.scrollHeight+'px'; body.offsetHeight; body.style.height='0px'; d.classList.add('closing'); }
+  body.addEventListener('transitionend',function te(){ body.removeEventListener('transitionend',te); body.style.height=''; if(!open){ d.open=false; d.classList.remove('closing'); } });
+ }
+ items.forEach(function(d){
+  d.querySelector('summary').addEventListener('click',function(e){
+   e.preventDefault();
+   var willOpen=!d.open || d.classList.contains('closing');
+   items.forEach(function(o){ if(o!==d && o.open && !o.classList.contains('closing')) animate(o,false); });
+   animate(d,willOpen);
+  });
+ });
+})();
+</script></div></div>
 <div class="elementor-element elementor-widget elementor-widget-text-editor eow-ky eow-chg" data-chg="8" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><h2>Expert Ophthalmology Witness in Nearby States</h2><p>Dr. Lefkowitz also reviews cases across the region: <a href="/ohio-expert-ophthalmology-witness/">Ohio</a>, <a href="/indiana-expert-ophthalmology-witness/">Indiana</a>, <a href="/illinois-expert-ophthalmology-witness/">Illinois</a>, <a href="/missouri-expert-ophthalmology-witness/">Missouri</a>, <a href="/tennessee-expert-ophthalmology-witness/">Tennessee</a>, <a href="/virginia-expert-ophthalmology-witness/">Virginia</a> and <a href="/west-virginia-expert-ophthalmology-witness/">West Virginia</a>.</p></div></div>
 				<div class="elementor-element elementor-element-7472f05 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="7472f05" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
 				<div class="elementor-widget-container">
