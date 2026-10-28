@@ -256,7 +256,7 @@
                 "itemOffered": {
                   "@type": "Service",
                   "name": "Affidavits",
-                  "description": "Affidavits in support of the case.",
+                  "description": "Affidavits in support of the case if merited.",
                   "provider": {
                     "@id": "https://www.expertophthalmologywitness.com/#todd-lefkowitz"
                   },
@@ -306,7 +306,7 @@
                   "@id": "https://www.expertophthalmologywitness.com/ophthalmologist-expert-witness/cataract-expert-witness/#service",
                   "name": "Cataract surgery expert witness",
                   "url": "https://www.expertophthalmologywitness.com/ophthalmologist-expert-witness/cataract-expert-witness/",
-                  "description": "Review of cataract surgery complications, including lens and wound problems.",
+                  "description": "Review of cataract surgery cases.",
                   "serviceType": "Cataract surgery expert witness",
                   "category": {
                     "@type": "Thing",
@@ -363,7 +363,7 @@
                   "@id": "https://www.expertophthalmologywitness.com/ophthalmologist-expert-witness/glaucoma-expert/#service",
                   "name": "Glaucoma expert witness",
                   "url": "https://www.expertophthalmologywitness.com/ophthalmologist-expert-witness/glaucoma-expert/",
-                  "description": "Review of glaucoma diagnosis and management.",
+                  "description": "Review of glaucoma cases.",
                   "serviceType": "Glaucoma expert witness",
                   "category": {
                     "@type": "Thing",
@@ -382,7 +382,7 @@
                   "@id": "https://www.expertophthalmologywitness.com/retinal-detachment-expert-witness/#service",
                   "name": "Retinal detachment expert witness",
                   "url": "https://www.expertophthalmologywitness.com/retinal-detachment-expert-witness/",
-                  "description": "Review of retinal detachment cases, including delayed diagnosis.",
+                  "description": "Review of retinal detachment cases.",
                   "serviceType": "Retinal detachment expert witness",
                   "category": {
                     "@type": "Thing",
@@ -886,7 +886,7 @@
           "name": "Does Dr. Lefkowitz work for both plaintiff and defense in Kentucky?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. He reviews Kentucky eye cases for plaintiff and defense counsel, and gives the same independent opinion either way.",
+            "text": "Dr. Lefkowitz reviews Kentucky eye cases for mainly plaintiff and sometimes defense counsel, but provides the same independent opinion either way.",
             "author": {
               "@id": "https://www.expertophthalmologywitness.com/#todd-lefkowitz"
             }
@@ -958,7 +958,7 @@
           "@type": "HowToStep",
           "position": 3,
           "name": "Send the medical records",
-          "text": "Send the medical records. He reviews them and gives you his opinion.",
+          "text": "Send Dr. Lefkowitz the medical records. He will review them and provide an expert ophthalmology witness report with his opinion.",
           "url": "https://www.expertophthalmologywitness.com/kentucky-expert-ophthalmology-witness/#step-3"
         }
       ]
