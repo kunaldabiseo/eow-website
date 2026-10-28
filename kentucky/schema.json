@@ -10,8 +10,8 @@
       "url": "https://www.expertophthalmologywitness.com/kentucky-expert-ophthalmology-witness/",
       "name": "Kentucky Expert Ophthalmology Witness | Dr. Todd Lefkowitz MD",
       "headline": "Kentucky Expert Ophthalmology Witness – Dr. Todd Lefkowitz",
-      "description": "Expert ophthalmologist witness for Kentucky cases. Board-certified Dr. Todd Lefkowitz reviews eye surgery claims for plaintiff or defense.",
-      "abstract": "Dr. Todd A. Lefkowitz, a board-certified ophthalmologist with over 40 years of practice, serves as an expert ophthalmology witness (expert ophthalmologist witness) for plaintiff and defense attorneys in Kentucky. He reviews records, supports Kentucky certificates of merit under KRS 411.167, provides affidavits, and gives deposition and trial testimony on cataract, eyelid, LASIK, glaucoma and retinal detachment cases.",
+      "description": "Expert ophthalmologist witness for Kentucky cases. Board-certified Dr. Todd Lefkowitz reviews eye surgery claims, mainly for plaintiff and sometimes defense.",
+      "abstract": "Dr. Todd A. Lefkowitz, a board-certified ophthalmologist with over 40 years of practice, serves as an expert ophthalmology witness (expert ophthalmologist witness) for mainly plaintiff and sometimes defense attorneys in Kentucky. He reviews records, supports Kentucky certificates of merit under KRS 411.167, provides affidavits, and gives deposition and trial testimony on cataract, eyelid, LASIK, glaucoma and retinal detachment cases.",
       "inLanguage": "en-US",
       "isPartOf": {
         "@id": "https://www.expertophthalmologywitness.com/#website"
@@ -140,7 +140,7 @@
     {
       "@type": "Audience",
       "@id": "https://www.expertophthalmologywitness.com/kentucky-expert-ophthalmology-witness/#audience",
-      "audienceType": "Plaintiff and defense attorneys and law firms handling eye-care cases in Kentucky",
+      "audienceType": "Mainly plaintiff and sometimes defense attorneys and law firms handling eye-care cases in Kentucky",
       "geographicArea": {
         "@id": "https://www.expertophthalmologywitness.com/kentucky-expert-ophthalmology-witness/#kentucky"
       }
@@ -172,7 +172,7 @@
           "sameAs": "https://en.wikipedia.org/wiki/Medical_malpractice"
         }
       ],
-      "description": "Expert ophthalmology witness services for Kentucky cases: medical records review, standard-of-care opinions, certificate of merit consulting under KRS 411.167, affidavits, deposition testimony (in person or by video conference) and trial testimony, for plaintiff and defense counsel.",
+      "description": "Expert ophthalmology witness services for Kentucky cases: medical records review, standard-of-care opinions, certificate of merit consulting under KRS 411.167, affidavits, deposition testimony (in person or by video conference) and trial testimony, for mainly plaintiff and sometimes defense counsel.",
       "url": "https://www.expertophthalmologywitness.com/kentucky-expert-ophthalmology-witness/",
       "image": {
         "@id": "https://www.expertophthalmologywitness.com/#todd-lefkowitz-photo"
@@ -440,7 +440,7 @@
         "Ophthalmology Consultant",
         "Expert Ophthalmology Witness"
       ],
-      "description": "Board-certified clinical ophthalmologist with over 40 years of practice as a surgeon and clinician. Expert ophthalmology witness for plaintiff and defense in cases across the United States and internationally, with 400+ cases completed on a contract or retainer basis. Former Chief of Ophthalmology at Luke AFB and Scott AFB in the US Air Force Medical Corps.",
+      "description": "Board-certified clinical ophthalmologist with over 40 years of practice as a surgeon and clinician. Expert ophthalmology witness, mainly for plaintiff and sometimes defense, in cases across the United States and internationally, with 400+ cases completed on a contract or retainer basis. Former Chief of Ophthalmology at Luke AFB and Scott AFB in the US Air Force Medical Corps.",
       "url": "https://www.expertophthalmologywitness.com/about-me/",
       "mainEntityOfPage": "https://www.expertophthalmologywitness.com/about-me/",
       "image": {
@@ -821,7 +821,7 @@
       "employee": {
         "@id": "https://www.expertophthalmologywitness.com/#todd-lefkowitz"
       },
-      "description": "Expert ophthalmology witness services by Dr. Todd A. Lefkowitz, MD, for plaintiff and defense attorneys nationwide and internationally.",
+      "description": "Expert ophthalmology witness services by Dr. Todd A. Lefkowitz, MD, for mainly plaintiff and sometimes defense attorneys nationwide and internationally.",
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "Case enquiries from attorneys",
