@@ -4582,7 +4582,7 @@ var _wpUtilSettings = {&quot;ajax&quot;:{&quot;url&quot;:&quot;/wp-admin/admin-a
  document.getElementById('hl').addEventListener('change',function(e){
   try{ var d=document.getElementById('if-after').contentDocument; d.body.classList.toggle('eow-show',e.target.checked); fit(document.getElementById('if-after')); }catch(err){}
  });
- var h=(location.hash||'').slice(1); if(['before','after','changes'].indexOf(h)>-1) show(h);
+ var h=(location.hash||'').slice(1); show(['before','after','changes'].indexOf(h)>-1?h:'after');
 })();
 </script>
 </body>
